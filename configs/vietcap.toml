@@ -1,0 +1,33 @@
+mode = "vietcap"
+symbols = []
+timeframe = "1d"
+database_path = "data/vietcap.sqlite3"
+
+[data]
+primary_provider = "vnstock"
+primary_market_source = "KBS"
+primary_financial_source = "KBS"
+backup_provider = "vietcap"
+enable_failover = true
+vnstock_path = "data/vnstock"
+vietcap_path = "data/vietcap"
+exchanges = ["HOSE", "HNX", "UPCOM"]
+# Bổ sung lịch nghỉ/lịch bất thường đã được xác minh khi vận hành trong phiên.
+holidays = []
+
+[runtime]
+scan_interval_seconds = 900
+cache_seconds = 30
+stale_after_seconds = 1200
+
+[alerts]
+default_mode = "watchlist"
+max_per_cycle = 10
+retry_seconds = 5
+
+[strategy]
+ema_fast = 20
+ema_slow = 50
+rsi_period = 14
+buy_rsi_min = 50.0
+sell_rsi_level = 70.0

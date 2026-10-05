@@ -1,0 +1,12 @@
+symbol,exchange,name,asset_type,status
+FPT,HOSE,Nhãn FPT - giá hoàn toàn giả lập,stock,active
+HPG,HOSE,Nhãn HPG - giá hoàn toàn giả lập,stock,active
+VNM,HOSE,Nhãn VNM - giá hoàn toàn giả lập,stock,active
+HNX01,HNX,Cổ phiếu giả lập HNX 01,stock,active
+HNX02,HNX,Cổ phiếu giả lập HNX 02,stock,active
+HNX03,HNX,Cổ phiếu giả lập HNX 03,stock,active
+UPCOM01,UPCOM,Cổ phiếu giả lập UPCOM 01,stock,active
+UPCOM02,UPCOM,Cổ phiếu giả lập UPCOM 02,stock,active
+UPCOM03,UPCOM,Cổ phiếu giả lập UPCOM 03,stock,active
+PAUSED01,UPCOM,Mã giả lập tạm ngừng giao dịch,stock,halted
+ETFDEMO,HOSE,Quỹ mẫu bị loại khỏi phạm vi cổ phiếu,etf,active

@@ -1,0 +1,21 @@
+mode = "csv"
+timeframe = "1d"
+symbols = []
+database_path = "data/local-csv.sqlite3"
+
+[data]
+exchanges = ["HOSE", "HNX", "UPCOM"]
+universe_path = "fixtures/universe.csv"
+candles_path = "data/candles.csv"
+# financials_path = "data/financials.csv"
+holidays = []
+
+[runtime]
+scan_interval_seconds = 900
+cache_seconds = 30
+stale_after_seconds = 1200
+
+[alerts]
+default_mode = "watchlist"
+max_per_cycle = 10
+retry_seconds = 5

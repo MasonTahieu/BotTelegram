@@ -1,0 +1,30 @@
+# Cấu hình demo: dữ liệu giả lập, không gọi API và không gửi Telegram.
+mode = "demo"
+timeframe = "1d"
+# Để trống = chọn toàn bộ CỔ PHIẾU trong file danh sách của ba sàn.
+symbols = []
+database_path = "data/demo.sqlite3"
+
+[data]
+exchanges = ["HOSE", "HNX", "UPCOM"]
+universe_path = "fixtures/universe.csv"
+# Điền lịch nghỉ chính thức vào đây trước khi dùng dữ liệu thị trường thật.
+holidays = []
+
+[runtime]
+scan_interval_seconds = 900
+cache_seconds = 30
+stale_after_seconds = 1200
+demo_start = "2026-09-18T10:00:00+07:00"
+
+[alerts]
+default_mode = "watchlist"
+max_per_cycle = 10
+retry_seconds = 5
+
+[strategy]
+ema_fast = 20
+ema_slow = 50
+rsi_period = 14
+buy_rsi_min = 50.0
+sell_rsi_level = 70.0

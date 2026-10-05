@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fintech-telegram-bot"
+version = "0.4.0"
+description = "Vietnamese stock signals with Vnstock/KBS primary, Vietcap failover, and Telegram delivery"
+requires-python = ">=3.11"
+dependencies = [
+    "vnstock==4.0.8",
+    "Pillow>=10",
+]
+
+[tool.setuptools.packages.find]
+include = ["fintech_bot*"]
